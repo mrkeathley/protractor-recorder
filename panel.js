@@ -46,7 +46,7 @@ function update(logs) {
     if (!editing) {
         var code = document.querySelector('code');
         if (code)
-            code.innerText = logs.join('\n');
+            code.textContent = logs.join('\n');
             
         Prism.highlightAll();
             
